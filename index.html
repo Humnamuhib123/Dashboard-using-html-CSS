@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./index.css">
+    
+</head>
+
+<body>
+
+    <nav class="side_bar">
+        <div class="top_container">
+            <div class="icon">
+                <ion-icon name="reorder-four-outline"></ion-icon>
+            </div>
+                <p class="miton">Miton<span class="dot">.</span></p>
+           
+        </div>
+
+        <div class="bottom_container">
+            <div class="col">
+
+                <div class="icon">
+                    <ion-icon name="grid"></ion-icon>
+                </div>
+                
+                    <p>Dashboard</p>
+               
+            </div>
+
+            <div class="col">
+                <div class="icon">
+                    <ion-icon name="chatbubble-ellipses"></ion-icon>
+                </div>
+             
+                    <p>Messages</p>
+               
+            </div>
+
+            <div class="col">
+                <div class="icon">
+                    <ion-icon name="image"></ion-icon>
+                </div>
+                    <p>Gallery</p>
+            </div>
+            <div class="col">
+                <div class="icon">
+                    <ion-icon name="camera"></ion-icon>
+                </div>
+                    <p>Add Photo</p>
+            </div>
+
+            <div class="col">
+                <div class="icon">
+                    <ion-icon name="timer"></ion-icon>
+                </div>
+                    <p>History</p>
+            </div>
+            <div class="col">
+                <div class="icon">
+                    <ion-icon name="calendar-clear"></ion-icon>
+                </div>
+                    <p>Schedule</p>
+            </div>
+            <div class="col">
+                <div class="icon">
+                    <ion-icon name="compass"></ion-icon>
+                </div>
+                    <p>Explore</p>
+            </div>
+        </div>
+    </nav>
+
+    <section class="main_section">
+
+        <nav class="nav_container">
+            <div class="search_container">
+                <div class="search_icon_container">
+                    <ion-icon name="search" style="color: gray; "></ion-icon>
+                </div>
+                <div id="search_bar">
+                    <input type="text" placeholder="search">
+                </div>
+            </div>
+
+            <div class="profile_container">
+                <div class="image_container">
+                    <img
+                        src="data:image/jpeg;base64,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">
+                </div>
+                <div class="text_container">
+                    <h5>Jessy Smith</h5>
+                    <p>Project Manager</p>
+                </div>
+            </div>
+
+        </nav>
+
+        <section class="main">
+
+            <h6 class="heading">Analytics Overview</h6>
+
+            <section class="analytic_section">
+                <div class="card">
+                    <div class="icon_container1 icon_container" >
+                        <ion-icon name="people" class="icon"></ion-icon>
+                    </div>
+                    <div>
+                        <h5>28.7K</h5>
+                        <p>Total Followers</p>     
+                    </div>
+            
+                </div>
+
+                <div class="card">
+                    <div class="icon_container2 icon_container">
+                        <ion-icon name="thumbs-up-outline"></ion-icon>
+                    </div>
+                    <div>
+                        <h5>8.K</h5>
+                        <p>Impressions</p>
+                        <p>78.8%</p>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="icon_container3 icon_container">
+                        <ion-icon name="git-network-outline"></ion-icon>
+                    </div>
+
+                    <div>
+                        <h5>1.7K</h5>
+                        <p>Total engagement</p>
+                        <p>12.3%</p>
+                    </div>
+
+                </div>
+
+                <div class="card">
+                    <div class="icon_container4 icon_container">
+                        <ion-icon name="magnet"></ion-icon>
+                    </div>
+                    <div>
+                        <h5>28.7K</h5>
+                        <p>Conversation rate</p>
+                        <p>18.8%</p>
+                    </div>
+
+                </div>
+            </section>
+
+
+
+
+            <section class="follower_section">
+                <div class="left_container">
+                    <h6 class="footer_heading">Followers</h6>
+                    <div class="card">
+                        <div class="icon_container5 icon_container">
+                            <ion-icon name="people"></ion-icon>
+                        </div>
+                        <h5>28.7K</h5>
+                        <p>Total Followers</p>
+                    </div>
+                </div>
+                <div class="right_container">
+                    <h6 class="footer_heading">Conversion Rate</h6>
+                    <div id="conversion_container">
+
+                        <h5>Conversion per Ad</h5>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto id cupiditate eaque quod
+                            pariatur
+                            deserunt !</p>
+                    </div>
+                </div>
+
+
+
+            </section>
+        </section>
+
+    </section>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</html>
